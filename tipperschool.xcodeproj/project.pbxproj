@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0252EEFA1E3E40BF00833F48 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0252EEF91E3E40BF00833F48 /* SettingsViewController.swift */; };
 		028033761E2675AA00BD25C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028033751E2675AA00BD25C7 /* AppDelegate.swift */; };
 		028033781E2675AA00BD25C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028033771E2675AA00BD25C7 /* ViewController.swift */; };
 		0280337B1E2675AA00BD25C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 028033791E2675AA00BD25C7 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		028033801E2675AA00BD25C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0280337E1E2675AA00BD25C7 /* LaunchScreen.storyboard */; };
 		0280338B1E2675AB00BD25C7 /* tipperschoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280338A1E2675AB00BD25C7 /* tipperschoolTests.swift */; };
 		028033961E2675AB00BD25C7 /* tipperschoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028033951E2675AB00BD25C7 /* tipperschoolUITests.swift */; };
+		02CE78081E2CEFF4001625BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028033771E2675AA00BD25C7 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0252EEF91E3E40BF00833F48 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		028033721E2675AA00BD25C7 /* tipperschool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipperschool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		028033751E2675AA00BD25C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		028033771E2675AA00BD25C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +103,7 @@
 				028033751E2675AA00BD25C7 /* AppDelegate.swift */,
 				028033771E2675AA00BD25C7 /* ViewController.swift */,
 				028033791E2675AA00BD25C7 /* Main.storyboard */,
+				0252EEF91E3E40BF00833F48 /* SettingsViewController.swift */,
 				0280337C1E2675AA00BD25C7 /* Assets.xcassets */,
 				0280337E1E2675AA00BD25C7 /* LaunchScreen.storyboard */,
 				028033811E2675AA00BD25C7 /* Info.plist */,
@@ -261,6 +265,7 @@
 			files = (
 				028033781E2675AA00BD25C7 /* ViewController.swift in Sources */,
 				028033761E2675AA00BD25C7 /* AppDelegate.swift in Sources */,
+				0252EEFA1E3E40BF00833F48 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CE78081E2CEFF4001625BD /* ViewController.swift in Sources */,
 				0280338B1E2675AB00BD25C7 /* tipperschoolTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +509,7 @@
 				0280339C1E2675AB00BD25C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0280339D1E2675AB00BD25C7 /* Build configuration list for PBXNativeTarget "tipperschoolTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +518,7 @@
 				0280339F1E2675AB00BD25C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		028033A01E2675AB00BD25C7 /* Build configuration list for PBXNativeTarget "tipperschoolUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +527,7 @@
 				028033A21E2675AB00BD25C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
