@@ -1,6 +1,6 @@
-# Pre-work - *Name of App Here*
+# Pre-work - TipperSchool - A Simple Tip Calculator for iOS
 
-**Name of your app** is a tip calculator application for iOS.
+TipperSchool is a tip calculator application for iOS.
 
 Submitted by: Toan Ngo
 
@@ -23,7 +23,7 @@ The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
 
-## Video Walkthrough 
+## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
@@ -36,7 +36,7 @@ New to Swift & Xcode, but the IDE seems very intuitive and fun to play around wi
 
 ## License
 
-    Copyright [2016] [name of copyright owner]
+    Copyright [2016] [Toan Ngo]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
