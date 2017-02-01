@@ -17,13 +17,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadSettings()
         // Do any additional setup after loading the view, typically from a nib.
+        loadSettings()
     }
     
+    // Load settings after view
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        // Load settings after view appears
+        
+        // App animation
+        self.view.alpha = 0
+        UIView.animate(withDuration: 1.0){
+            self.view.alpha = 1.0
+        }
+        
         loadSettings()
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -43,6 +50,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // End editing after tapping
 
     @IBAction func onTap(_ sender: Any) {
         view.endEditing(true)
