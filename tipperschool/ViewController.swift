@@ -17,7 +17,26 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadSettings()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // Load settings after view appears
+        loadSettings()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        loadSettings()
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        loadSettings()
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        loadSettings()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +48,13 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
+    // Load settings from Settings View
+    
+    func loadSettings() {
+        let defaults = UserDefaults.standard
+        let intValue = defaults.integer(forKey: "default_tip")
+        tipControl.selectedSegmentIndex = intValue;
+    }
 
     @IBAction func calculateTip(_ sender: Any) {
         
@@ -40,6 +66,10 @@ class ViewController: UIViewController {
         
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+    }
+    
+    @IBAction func segmentValueChange(_ sender: Any) {
+        calculateTip(Any.self)
     }
 }
 
